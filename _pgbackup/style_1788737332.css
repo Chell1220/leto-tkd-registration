@@ -1,0 +1,149 @@
+.girl-image {
+    object-position: 80% center;
+}
+
+.logo {
+    margin-top: 80px;
+    transform: translateX(14px);
+}
+
+.welcome-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+}
+
+.values-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(142, 141, 141);
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    z-index: v2;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.hero-title {
+    font-family: "League Spartan", sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 1.05;
+    margin-left: 40px;
+    margin-top: 40px;
+    position: relative;
+    z-index: v2;
+    line-height: .98;
+}
+
+.leto-red {
+    color: #B50E10;
+}
+
+.register-btn {
+    background-color: #B50E10;
+    border-color: #B50E10;
+    color: white;
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 5px 32px;
+    border-radius: 20px;
+    min-width: 450px;
+    min-height: 50px;
+    margin-left: 40px;
+    margin-top: 75px;
+}
+
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin: 40px auto 0;
+    max-width: 700px;
+}
+
+.stepper::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 2px;
+    background-color: #B4B6BA;
+    z-index: 1;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+    flex: 1 1 0;
+    z-index: 2;
+}
+
+.step-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #B50E10;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 15px;
+    box-shadow: 0 0 0 4px;
+}
+
+.step-label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.step-circle.inactive {
+    background-color: #B4B6BA;
+    color: white;
+}
+
+.step-label.active {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.welcome-content {
+    max-width: 650px;
+    margin: 50px auto 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.welcome-content h1 {
+    max-width: 650px;
+    margin: 50px auto 0;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.info-box {
+    max-width: 700px;
+    margin: 35px auto 0;
+    padding: 25px 30px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
