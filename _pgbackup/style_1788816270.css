@@ -203,14 +203,6 @@
     padding-top: 40px;
 }
 
-.student-nav-buttons {
-    max-width: 850px;
-    margin: 0px auto 0;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-}
-
 .bi-arrow-right {
     padding-left: 20px;
 }

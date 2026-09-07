@@ -203,14 +203,6 @@
     padding-top: 40px;
 }
 
-.student-nav-buttons {
-    max-width: 850px;
-    margin: 0px auto 0;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-}
-
 .bi-arrow-right {
     padding-left: 20px;
 }
@@ -240,18 +232,19 @@
     font-size: 25px;
 }
 
-.student-form .form-control {
-    min-height: 80px;
-    border-radius: 10px;
-    border: 1px solid #d6d6d6;
+.student-form .form-label {
     font-family: "Montserrat", sans-serif;
     font-size: 25px;
-    padding: 0px 20px;
+    color: #555;
 }
 
-.student-form .form-control::placeholder {
-    color: #888;
-    font-size: 25px;
+.student-form .form-control {
+    min-height: 52px;
+    border-radius: 8px;
+    border: 1px solid #d6d6d6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 10px 14px;
 }
 
 .student-form .row {
