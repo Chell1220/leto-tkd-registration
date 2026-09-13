@@ -1,0 +1,12 @@
+# Pinegrow
+_pgbackup/
+_pginfo/
+projectdb.pgml
+pinegrow*.json
+
+# Visual Studio
+.vs/
+
+# Windows
+Thumbs.db
+Desktop.ini
