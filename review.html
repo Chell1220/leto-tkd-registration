@@ -47,10 +47,10 @@
         </div>
       </div>
       <div class="step">
-        <div class="step-circle active">
-          <p>2</p>
+        <div class="step-circle complete">
+          <p><i class="bi bi-check-lg"></i></p>
         </div>
-        <div class="step-label active">
+        <div class="step-label inactive">
           <p>
             Student<br />
             Information
@@ -58,8 +58,8 @@
         </div>
       </div>
       <div class="step">
-        <div class="step-circle inactive">
-          <p>3</p>
+        <div class="step-circle complete">
+          <p><i class="bi bi-check-lg"></i></p>
         </div>
         <div class="step-label inactive">
           <p>
@@ -69,10 +69,10 @@
         </div>
       </div>
       <div class="step">
-        <div class="step-circle inactive">
+        <div class="step-circle active">
           <p>4</p>
         </div>
-        <div class="step-label inactive">
+        <div class="step-label active">
           <p>
             Review &<br />
             Submit
@@ -80,65 +80,55 @@
         </div>
       </div>
     </div>
-    <div class="student-form">
-      <h1>Student Information</h1>
-      <p class="form-intro">Please enter the student's information below.</p>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <input type="text" class="form-control" placeholder="First Name*" />
+    <div class="review-card">
+      <h1>Review & Submit</h1>
+      <p class="form-intro">
+        Please review the information below before submitting your registration.
+      </p>
+      <div>
+        <h2>Student Information</h2>
+        <div class="review-status-box">
+          <p class="review-status">
+            <strong>First Name:</strong><span>John</span><br />
+            <strong>Last Name:</strong><span>Doe</span><br />
+            <strong>Date of Birth:</strong><span>01/01/2010</span><br />
+            <strong>Gender:</strong><span>Male</span><br />
+            <strong>Parent/Guardian Name:</strong><span>Jane Doe</span><br />
+            <strong>Email:</strong><span>john.doe@example.com</span><br />
+            <strong>Phone:</strong><span>(123) 456-7890</span><br />
+          </p>
+          <h2>Consent & Waiver</h2>
+          <p class="review-status">
+            <strong>Liability Waiver:</strong><span>Agreed</span><br />
+            <strong>Signature:</strong><span>On File</span>
+          </p>
         </div>
-        <div class="col-md-6 mb-3">
-          <input type="text" class="form-control" placeholder="Last Name*" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Date of Birth*"
-          />
-        </div>
-        <div class="col-md-6 mb-3">
-          <input type="text" class="form-control" placeholder="Gender Select" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Parent/Guardian Name*"
-          />
-        </div>
-        <div class="col-md-6 mb-3">
-          <input type="text" class="form-control" placeholder="Phone Number*" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mb-3">
-          <input type="text" class="form-control" placeholder="Email Address" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Mailing Address*"
-          />
-        </div>
+        <p class="review-agreement">
+          By clicking Submit, you confirm that the information provided is
+          accurate and complete.
+        </p>
       </div>
     </div>
     <div class="student-nav-buttons">
-      <a href="welcome.html" class="btn register-btn back"
-        ><i class="bi bi-arrow-left"></i>Back
+      <a href="student-info.html" class="btn register-btn back">
+        <i class="bi bi-arrow-left"></i>Back
       </a>
-      <a href="consent.html" class="btn register-btn next"
-        >Next<i class="bi bi-arrow-right"></i>
+      <a href="review.html" id="review-submit" class="btn register-btn next"
+        >Submit <i class="bi bi-check-lg"></i>
       </a>
     </div>
     <script src="assets/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      // Enable the next button when the user reaches the bottom of the waiver box
+      const waiverBox = document.querySelector(".waiver-box");
+      const nextButton = document.querySelector("#consent-next");
+
+      waiverBox.addEventListener("scroll", function () {
+        if (this.scrollHeight - this.clientHeight <= this.scrollTop + 2) {
+          nextButton.classList.remove("disabled");
+        }
+      });
+    </script>
   </body>
 </html>
